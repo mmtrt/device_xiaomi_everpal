@@ -442,7 +442,6 @@ ro.vendor.operator.seg=SEGC
 ro.vendor.operator.spec=SPEC0212
 ro.vendor.pref_scale_enable_cfg=1
 ro.vendor.radio.max.multisim=dsds
-ro.vendor.rc=/vendor/etc/init/hw/
 ro.vendor.sim_me_lock_mode=3
 ro.vendor.sim_refresh_reset_by_modem=1
 ro.vendor.smvr.p2batch.fhd=4
