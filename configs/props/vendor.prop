@@ -377,7 +377,6 @@ ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
 ro.vendor.fps.switch.default=true
 ro.vendor.have_aeev_feature=1
-ro.vendor.init.sensor.rc=init.sensor_2_0.rc
 ro.vendor.jpeg_decode_sw_opt=1
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.md_log_memdump_wait=15
