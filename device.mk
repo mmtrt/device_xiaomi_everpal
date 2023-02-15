@@ -389,6 +389,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureOverlayEverpal \
     ApertureQRScannerOverlayEverpal \
+    CarrierConfigOverlayEverpal \
     FrameworksResOverlayEverpal \
     SettingsOverlayEverpal \
     SystemUIOverlayEverpal
