@@ -398,6 +398,7 @@ PRODUCT_PACKAGES += \
     SettingsOverlayEverpal \
     SystemUIOverlayEverpal \
     TelephonyOverlayEverpal \
+    TetheringConfigOverlayEverpal \
     WifiOverlayEverpal
 
 # Screen Resolution
