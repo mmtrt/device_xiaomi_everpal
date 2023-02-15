@@ -359,6 +359,7 @@ PRODUCT_COPY_FILES += \
 # Runtime Resource (RRO) Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayEverpal \
+    ApertureQRScannerOverlayEverpal \
     FrameworksResOverlayEverpal \
     SettingsOverlayEverpal \
     SystemUIOverlayEverpal
