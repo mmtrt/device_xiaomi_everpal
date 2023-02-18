@@ -266,6 +266,9 @@ on post-fs-data
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
 
+    #Create nfc socket folder
+    mkdir /data/vendor/nfc_socket 0770 nfc nfc
+
     #Create flash folder
     mkdir /data/vendor/flash
     chown root system /data/vendor/flash
