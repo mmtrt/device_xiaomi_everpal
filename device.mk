@@ -72,7 +72,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio_policy.stub \
     libaudiofoundation.vendor \
-    libaudiopreprocessing.vendor
+    libaudiopreprocessing
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
@@ -100,7 +100,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    libbluetooth_audio_session.vendor
+    libbluetooth_audio_session
 
 # Boot Control
 PRODUCT_PACKAGES += \
