@@ -1215,7 +1215,7 @@ service vendor.charger /system/bin/chargeonlymode
 
 # NFC
 on property:ro.boot.product.hardware.sku=nfc
-    start vendor.nfc_hal_service
+    start nfc_hal_service
 
 on property:ro.boot.product.hardware.sku=""
     stop nfc_hal_service
