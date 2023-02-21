@@ -95,6 +95,15 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
+ifneq (eng,$(TARGET_BUILD_VARIANT))
+# ADB
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.usb.config=adb
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0
+endif
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1.vendor \
