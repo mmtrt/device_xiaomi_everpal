@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit Vendor GApps
-$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+$(call inherit-product-if-exists, vendor/gms/gms_mini.mk)
 
 # Inherit from everpal device
 $(call inherit-product, device/xiaomi/everpal/device.mk)
