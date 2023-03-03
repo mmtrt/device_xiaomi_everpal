@@ -251,13 +251,17 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service
-
+    android.hardware.media.omx@1.0-service \
+    libmedia_codeclist \
+    libstagefright_codecbase \
+    libstagefright_bufferpool@2.0.1 \
+    libstagefright_framecapture_utils \
+    libstagefright_softomx_plugin \
+    vendor.mediatek.hardware.mtkcodecservice@1.1.vendor
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor \
     libavservices_minijail.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
