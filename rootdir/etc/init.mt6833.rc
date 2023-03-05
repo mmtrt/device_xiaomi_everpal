@@ -1201,6 +1201,23 @@ service vendor.charger /system/bin/chargeonlymode
     group system graphics input
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
+# Start meme pd charger service
+on property:sys.boot_completed=1
+    chmod 0664 /sys/class/Charging_Adapter/pd_adapter/usbpd_verifed
+    chmod 0664 /sys/class/Charging_Adapter/pd_adapter/request_vdm_cmd
+    chmod 0664 /sys/class/Charging_Adapter/pd_adapter/verify_process
+    chmod 0664 /sys/class/power_supply/usb/pd_authentication
+    chmod 0664 /sys/class/power_supply/bms/authentic
+
+service batterysecret /vendor/bin/batterysecret
+    class last_start
+    user root
+    group system system wakelock
+    disabled
+    seclabel u:r:batterysecret:s0
+
+on property:sys.boot_completed=1
+    start batterysecret		
 
 # NFC
 on post-fs-data
