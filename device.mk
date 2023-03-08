@@ -60,6 +60,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0.vendor \
     android.hardware.audio.common@7.0-enums.vendor \
     android.hardware.audio.common@7.0-util.vendor \
+    android.hardware.audio.common@7.0.vendor \
     android.hardware.audio@6.0.vendor \
     android.hardware.audio@7.0-util.vendor \
     android.hardware.audio@7.0.vendor \
