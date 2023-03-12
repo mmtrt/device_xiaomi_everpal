@@ -158,6 +158,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 SELINUX_IGNORE_NEVERALLOWS := true
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
+# FM
+BOARD_HAS_MTK_HARDWARE := true
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 

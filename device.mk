@@ -483,8 +483,7 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    RevampedFMRadio \
-    libmtkfmjni
+    MtkFMRadio
 
 # USB
 PRODUCT_PACKAGES += \
