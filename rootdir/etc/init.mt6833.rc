@@ -1146,6 +1146,12 @@ on property:persist.vendor.mediatek.fg.log.enable=1
     write /sys/bus/platform/devices/battery/FG_daemon_log_level 7
     write /proc/sys/kernel/printk 8
 
+
+on property:persist.vendor.mtk_aurisys_framework_support=*
+    # Fix VoIP apps call echo
+    stop audioserver
+    start audioserver
+
 # add meta_tst for ATM
 service meta_tst /vendor/bin/meta_tst
     class core
