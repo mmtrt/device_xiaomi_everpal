@@ -17,6 +17,7 @@ persist.audio.button_jack.switch=0
 vendor.audio.ultrasound.log=0
 vendor.audio.ultrasound.mode=0
 vendor.audiohal.telephonytx.type=2
+persist.vendor.audio.misound.disable=true
 ro.audio.monitorRotation=true
 ro.vendor.audio.hifi=true
 ro.vendor.audio.scenario.support=true
