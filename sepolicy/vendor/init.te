@@ -1,1 +1,5 @@
+allow init self:netlink_generic_socket { read write };
+allow init sysfs:file { open write };
+allow init sysfs_batteryinfo:file open;
 allow init sysfs_therm:file open;
+allow init system_server:binder { call transfer };
