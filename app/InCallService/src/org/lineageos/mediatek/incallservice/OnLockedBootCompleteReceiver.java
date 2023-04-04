@@ -1,9 +1,3 @@
-/*
- * Copyright (C) 2023 The LineageOS Project
- *
- * SPDX-License-Identifier: Apache-2.0
- */
- 
 package org.lineageos.mediatek.incallservice;
 
 import android.content.BroadcastReceiver;
@@ -13,7 +7,7 @@ import android.content.Context;
 import android.util.Log;
 
 public class OnLockedBootCompleteReceiver extends BroadcastReceiver {
-    private static final String LOG_TAG = "MediatekInCallService";
+    private static final String LOG_TAG = "MtkInCallService";
 
     @Override
     public void onReceive(final Context context, Intent intent) {

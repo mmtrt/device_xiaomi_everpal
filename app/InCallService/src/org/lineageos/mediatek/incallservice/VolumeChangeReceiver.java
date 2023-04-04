@@ -1,9 +1,3 @@
-/*
- * Copyright (C) 2023 The LineageOS Project
- *
- * SPDX-License-Identifier: Apache-2.0
- */
- 
 package org.lineageos.mediatek.incallservice;
 
 import android.content.Intent;
@@ -17,7 +11,7 @@ import android.media.AudioDeviceInfo;
 import android.util.Log;
 
 public class VolumeChangeReceiver extends BroadcastReceiver {
-    public static final String LOG_TAG = "MediatekInCallService";
+    public static final String LOG_TAG = "MtkInCallService";
 
     private AudioManager mAudioManager;
 
@@ -29,9 +23,12 @@ public class VolumeChangeReceiver extends BroadcastReceiver {
         if (intent.getIntExtra(AudioManager.EXTRA_VOLUME_STREAM_TYPE, -1) == AudioManager.STREAM_VOICE_CALL) {
             AudioDeviceInfo callDevice = mAudioManager.getCommunicationDevice();
 
+            // Try to get volumeIndex
             int volumeIndex = intent.getIntExtra(AudioManager.EXTRA_VOLUME_STREAM_VALUE, -1);
-            if (volumeIndex == -1)
-                volumeIndex = mAudioManager.getStreamVolume(AudioManager.STREAM_VOICE_CALL);
+            if (volumeIndex < 0) {
+                Log.w(LOG_TAG, "Could not get volumeIndex!");
+                return;
+            }
 
             GainUtils.setGainLevel(callDevice.getPort().type(), volumeIndex, AudioSystem.STREAM_VOICE_CALL);
         }

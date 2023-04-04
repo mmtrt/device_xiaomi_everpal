@@ -1,9 +1,3 @@
-/*
- * Copyright (C) 2023 The LineageOS Project
- *
- * SPDX-License-Identifier: Apache-2.0
- */
- 
 package org.lineageos.mediatek.incallservice;
 
 import android.media.AudioManager;
@@ -20,7 +14,7 @@ import android.os.IBinder;
 import android.util.Log;
 
 public class VolumeChangeService extends Service {
-    public static final String LOG_TAG = "MediatekInCallService";
+    public static final String LOG_TAG = "MtkInCallService";
 
     private Context mContext;
     private VolumeChangeReceiver mVolumeChangeReceiver;
