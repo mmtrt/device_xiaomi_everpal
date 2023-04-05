@@ -1250,3 +1250,8 @@ service nfcstackp_vendor /vendor/bin/nfcstackp-vendor
     user nfc
     group nfc
     disabled
+
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk
+    chmod 440 /proc/net/unix
