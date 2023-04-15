@@ -20,6 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 include $(LOCAL_PATH)/configs/props/vendor_logtags.mk
 
 DEVICE_PATH := device/xiaomi/everpal
+BOARD_HAS_MTK_HARDWARE := true
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
