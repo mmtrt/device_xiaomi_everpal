@@ -14,6 +14,6 @@ LOCAL_SHARED_LIBRARIES := \
     libpowerhal \
     android.hardware.power-V2-ndk
 
-LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+LOCAL_HEADER_LIBRARIES := device_kernel_headers
 
 include $(BUILD_SHARED_LIBRARY)

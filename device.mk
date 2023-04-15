@@ -19,6 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Silence vendor logspam
 include $(LOCAL_PATH)/configs/props/vendor_logtags.mk
 
+DEVICE_PATH := device/xiaomi/everpal
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -123,6 +124,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libmtk_bsg \
     libmtk_bsg.recovery
+
+TARGET_KERNEL_DIR := kernel/xiaomi/everpal
+LOCAL_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
 
 # Camera
 PRODUCT_PACKAGES += \
