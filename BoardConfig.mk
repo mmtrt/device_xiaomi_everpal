@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/evergo
+DEVICE_PATH := device/xiaomi/everpal
 
 # A/B
 AB_OTA_UPDATER := true
@@ -50,10 +50,10 @@ BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 2
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := evergo,evergreen,opal
+TARGET_OTA_ASSERT_DEVICE := evergo,evergreen,everpal,opal
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := evergo
+TARGET_BOOTLOADER_BOARD_NAME := everpal
 TARGET_NO_BOOTLOADER := true
 
 # Build
@@ -69,8 +69,8 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_evergo
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_evergo
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_everpal
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_everpal
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
@@ -93,7 +93,7 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 
-TARGET_KERNEL_SOURCE := kernel/xiaomi/evergo
+TARGET_KERNEL_SOURCE := kernel/xiaomi/everpal
 TARGET_KERNEL_CONFIG := evergo_defconfig
 TARGET_FORCE_PREBUILT_KERNEL := true
 
@@ -167,4 +167,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit the proprietary files
-include vendor/xiaomi/evergo/BoardConfigVendor.mk
+include vendor/xiaomi/everpal/BoardConfigVendor.mk

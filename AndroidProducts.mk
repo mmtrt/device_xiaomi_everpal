@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_evergo.mk
+    $(LOCAL_DIR)/lineage_everpal.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_evergo-user \
-    lineage_evergo-userdebug \
-    lineage_evergo-eng
+    lineage_everpal-user \
+    lineage_everpal-userdebug \
+    lineage_everpal-eng

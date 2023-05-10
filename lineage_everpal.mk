@@ -11,21 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from evergo device
-$(call inherit-product, device/xiaomi/evergo/device.mk)
+# Inherit from everpal device
+$(call inherit-product, device/xiaomi/everpal/device.mk)
 
 # Inherit Vendor GApps
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
-PRODUCT_DEVICE := evergo
-PRODUCT_NAME := lineage_evergo
+PRODUCT_DEVICE := everpal
+PRODUCT_NAME := lineage_everpal
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := evergo
+PRODUCT_MODEL := everpal
 PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="evergo-user 11 RP1A.200720.011 V12.5.13.0.RGBCNXM release-keys"
-
-BUILD_FINGERPRINT := Redmi/evergo/evergo:11/RP1A.200720.011/V12.5.13.0.RGBCNXM:user/release-keys

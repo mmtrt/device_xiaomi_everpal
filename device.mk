@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/evergo/evergo-vendor.mk)
+$(call inherit-product, vendor/xiaomi/everpal/everpal-vendor.mk)
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -373,7 +373,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy.evergo \
+    android.hardware.wifi@1.0-service-lazy.everpal \
     hostapd \
     wpa_supplicant
 
