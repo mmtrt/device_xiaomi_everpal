@@ -11,6 +11,8 @@ set -e
 DEVICE=everpal
 VENDOR=xiaomi
 
+INITIAL_COPYRIGHT_YEAR=2023
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
