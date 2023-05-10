@@ -320,8 +320,7 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     multi_init.rc \
     init.recovery.mt6833.rc \
-    init.recovery.hardware.rc \
-    miui.factoryreset.rc \
+    init.recovery.hardware.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6833
