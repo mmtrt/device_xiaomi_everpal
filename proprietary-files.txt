@@ -1143,6 +1143,7 @@ vendor/lib/libmtkrillog.so
 vendor/lib/libmtkshifter_vendor.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/libmtksysutils.so
+vendor/lib/libmtk_drvb.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib/vendor.mediatek.hardware.charge@1.0.so
 vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
@@ -1255,6 +1256,7 @@ vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/libmtksysutils.so
 vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
+vendor/lib64/libmtk_drvb.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
 vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
@@ -2047,6 +2049,7 @@ vendor/lib/libcvsd_mtk.so
 vendor/lib/libdecrypt.so
 vendor/lib/libDefaultFpsActor.so
 vendor/lib/libdpframework.so
+vendor/lib/libDR.so
 vendor/lib/libfgauge_gm30.so
 vendor/lib/libfile_op.so
 vendor/lib/libFrameRecord.so
@@ -2091,6 +2094,8 @@ vendor/lib/libneuropilot_hal_utils.so
 vendor/lib/libNoFpsActor.so
 vendor/lib/libnotifyaudiohal.so
 vendor/lib/libnvram.so
+vendor/lib/libnvram_daemon_callback.so
+vendor/lib/libnvram_platform.so
 vendor/lib/libnvram_sec.so
 vendor/lib/libopus.so
 vendor/lib/libpcap.so
@@ -2100,6 +2105,7 @@ vendor/lib/libpkm.so
 vendor/lib/libpowerhal.so
 vendor/lib/libpowerhalwrap_vendor.so
 vendor/lib/libpq_cust_base.so
+vendor/lib/libpq_prot.so
 vendor/lib/libprotobuf-cpp-full-3.9.1.so
 vendor/lib/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib/librgbwlightsensor.so
@@ -2300,6 +2306,8 @@ vendor/lib64/libmtcloader.so
 vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libNoFpsActor.so
 vendor/lib64/libnvram.so
+vendor/lib64/libnvram_daemon_callback.so
+vendor/lib64/libnvram_platform.so
 vendor/lib64/libnvram_sec.so
 vendor/lib64/libpcap.so
 vendor/lib64/libperfctl_vendor.so
@@ -2308,6 +2316,7 @@ vendor/lib64/libpkm.so
 vendor/lib64/libpowerhal.so
 vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/libpq_cust_base.so
+vendor/lib64/libpq_prot.so
 vendor/lib64/libprotobuf-cpp-full-3.9.1.so
 vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib64/libratconfig.so
