@@ -1,6 +1,3 @@
-// Copyright (C) 2023 StatiX
-// SPDX-License-Identifer: Apache-2.0
-
 cc_library_static {
     name: "libvibratoreverpalimpl",
     vendor: true,
