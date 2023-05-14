@@ -193,6 +193,9 @@ PRODUCT_PACKAGES += \
     android.hardware.lights-service.example
 
 # Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
