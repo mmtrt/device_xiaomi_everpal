@@ -268,8 +268,8 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio@1.5.vendor
+    android.hardware.radio.config@1.2.vendor:64 \
+    android.hardware.radio@1.5.vendor:64
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
