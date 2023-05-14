@@ -24,12 +24,12 @@ vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 
-# Audio-Hardware
+# Audio (Hardware)
 vendor/lib/hw/audio.primary.mt6833.so
 vendor/lib/hw/audio.r_submix.mt6833.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 
-# Audio-configs
+# Audio (Configs)
 vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_param/BtInfo_AudioParam.xml
 vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml
@@ -1389,7 +1389,7 @@ lib64/extractors/libmtkmpeg2extractor.so
 
 # Postprocessing
 
-# Power-Hardware
+# Power
 vendor/lib/hw/power.default.so
 vendor/lib64/hw/power.default.so
 
@@ -1452,7 +1452,7 @@ vendor/lib/libthermalalgo.so
 vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 
-# Thermal-Hardware
+# Thermal (Hardware)
 
 # Time
 
