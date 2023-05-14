@@ -187,7 +187,9 @@ PRODUCT_PACKAGES += \
     libkeymaster41.vendor:64 \
     libkeymaster4support.vendor:64 \
     libkeymaster_messages.vendor:64 \
-    libkeymaster_portable.vendor:64
+    libkeymaster_portable.vendor:64 \
+    libkeystore-engine-wifi-hidl:64 \
+    libkeystore-wifi-hidl
 
 # Light
 PRODUCT_PACKAGES += \
@@ -367,9 +369,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     wpa_supplicant
 
-PRODUCT_PACKAGES += \
-    libkeystore-wifi-hidl \
-    libkeystore-engine-wifi-hidl
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
