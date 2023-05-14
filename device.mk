@@ -182,16 +182,12 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0.vendor:64 \
-    android.hardware.keymaster@4.0.vendor:64 \
     android.hardware.keymaster@4.1.vendor:64 \
     libkeymaster4.vendor:64 \
     libkeymaster41.vendor:64 \
-    libkeymaster4_1support.vendor:64 \
     libkeymaster4support.vendor:64 \
     libkeymaster_messages.vendor:64 \
-    libkeymaster_portable.vendor:64 \
-    libpuresoftkeymasterdevice.vendor:64
+    libkeymaster_portable.vendor:64
 
 # Light
 PRODUCT_PACKAGES += \
