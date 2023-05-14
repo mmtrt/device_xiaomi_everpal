@@ -1457,9 +1457,6 @@ vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 
 # Time
 
-# Vintf (MEDIATEK)
--vendor/etc/vintf/manifest/power-default.xml
-
 # VINTF (ODM)
 -vendor/odm/etc/vintf/manifest_dsds.xml
 -vendor/odm/etc/vintf/manifest_qsqs.xml
