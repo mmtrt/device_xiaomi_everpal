@@ -1,5 +1,15 @@
 # Unpinned blobs from evergo-user 11 RP1A.200720.011 V12.5.9.0.RGBMIXM release-keys
 
+# AAL
+vendor/lib/libaal_cust.so
+vendor/lib/libaal_key.so
+vendor/lib/libaal_mtk.so
+vendor/lib/libaalservice.so
+vendor/lib64/libaal_cust.so
+vendor/lib64/libaal_key.so
+vendor/lib64/libaal_mtk.so
+vendor/lib64/libaalservice.so
+
 # Audio
 vendor/lib/libaudiocompensationfilterc.so
 vendor/lib/libaudiocompensationfilter_vendor.so
@@ -2091,10 +2101,6 @@ vendor/lib/hw/kmsetkey.beanpod.so
 vendor/lib/hw/libSoftGatekeeper.so
 vendor/lib/imx355ofilm_mipi_raw_tuning.so
 vendor/lib/imx355sunny_mipi_raw_tuning.so
-vendor/lib/libaalservice.so
-vendor/lib/libaal_cust.so
-vendor/lib/libaal_key.so
-vendor/lib/libaal_mtk.so
 vendor/lib/libaedv.so
 vendor/lib/libapmonitor_vendor.so
 vendor/lib/libasn1c_core.so
@@ -2273,10 +2279,6 @@ vendor/lib64/lib3a.sensors.flicker.so
 vendor/lib64/libaaa_ltm.so
 vendor/lib64/libaaa_ltmx.so
 vendor/lib64/libaachaptics.so
-vendor/lib64/libaalservice.so
-vendor/lib64/libaal_cust.so
-vendor/lib64/libaal_key.so
-vendor/lib64/libaal_mtk.so
 vendor/lib64/libacdk.so
 vendor/lib64/libaedv.so
 vendor/lib64/libaiawb_moon.so
