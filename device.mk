@@ -132,8 +132,7 @@ PRODUCT_PACKAGES += \
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd \
-    android.hardware.fastboot@1.1-impl-mock \
-    android.hardware.fastboot@1.1-impl-mock.recovery
+    android.hardware.fastboot@1.0-impl.custom
 
 # Fingerprint
 PRODUCT_PACKAGES += \
