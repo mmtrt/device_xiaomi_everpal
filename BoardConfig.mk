@@ -152,7 +152,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 SELINUX_IGNORE_NEVERALLOWS := true
-include device/mediatek/sepolicy_vndr/SEPolicy.mk
+# include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Vendor
 BOARD_VENDOR := xiaomi
