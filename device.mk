@@ -251,11 +251,9 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0.vendor \
-    android.hardware.power@1.1.vendor \
-    android.hardware.power@1.2.vendor \
-    android.hardware.power@1.3.vendor \
-    android.hardware.power-service-mediatek
+    android.hardware.power-service-mediatek \
+    android.hardware.power-V1-ndk_platform.vendor:64 \
+    android.hardware.power@1.1.vendor:64
 
 # Power configs
 PRODUCT_COPY_FILES += \
