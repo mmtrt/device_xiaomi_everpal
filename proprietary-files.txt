@@ -1474,7 +1474,6 @@ vendor/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 -vendor/odm/etc/vintf/manifest_tsts.xml
 
 # WiFi
-bin/iwpriv
 -vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 
 # Xiaomi
