@@ -1102,6 +1102,11 @@ vendor/lib64/hw/gps.default.so
 
 # GPS-Hardware
 
+# GPU
+vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
+vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc
+-vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml
+
 # Gatekeeper
 vendor/lib/hw/gatekeeper.beanpod.so
 vendor/lib64/hw/gatekeeper.beanpod.so
@@ -1214,6 +1219,7 @@ vendor/lib/libmtksysutils.so
 vendor/lib/libmtk_drvb.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib/vendor.mediatek.hardware.charge@1.0.so
+vendor/lib/vendor.mediatek.hardware.gpu@1.0.so
 vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib/vendor.mediatek.hardware.mms@1.0.so
 vendor/lib/vendor.mediatek.hardware.mms@1.1.so
