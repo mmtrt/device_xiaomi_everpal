@@ -236,7 +236,6 @@ vendor/etc/aurisys_param/Speech_AudioParam.xml
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
-vendor/etc/bluetooth_offload_audio_policy_configuration.xml
 vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
