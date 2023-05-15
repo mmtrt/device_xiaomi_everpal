@@ -1529,6 +1529,7 @@ vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
 vendor/bin/batterysecret
 vendor/bin/bp_kmsetkey_ca
+vendor/bin/ccci_fsd
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
 vendor/bin/dconfig
