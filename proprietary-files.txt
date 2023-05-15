@@ -27,7 +27,11 @@ vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 # Audio (Hardware)
 vendor/lib/hw/audio.primary.mt6833.so
 vendor/lib/hw/audio.r_submix.mt6833.so
+vendor/lib/hw/audio.usb.mt6833.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
+vendor/lib64/hw/audio.primary.mt6833.so
+vendor/lib64/hw/audio.r_submix.mt6833.so
+vendor/lib64/hw/audio.usb.mt6833.so
 
 # Audio (Configs)
 vendor/etc/audio_param/AudioParamOptions.xml
