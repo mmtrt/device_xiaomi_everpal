@@ -1376,16 +1376,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.5.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# MTK Media Extractors
-lib64/extractors/libmtkadpcmextractor.so
-lib64/extractors/libmtkalacextractor.so
-lib64/extractors/libmtkapeextractor.so
-lib64/extractors/libmtkasfextractor.so
-lib64/extractors/libmtkaviextractor.so
-lib64/extractors/libmtkflvextractor.so
-lib64/extractors/libmtkmp3extractor.so
-lib64/extractors/libmtkmpeg2extractor.so
-
 
 # Perf
 
