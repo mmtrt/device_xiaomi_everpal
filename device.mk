@@ -429,8 +429,8 @@ PRODUCT_PACKAGES += \
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/mediatek_wlan \
-    hardware/xiaomi
+    hardware/mediatek \
+    hardware/mediatek_wlan
 
 # SoundTrigger
 PRODUCT_PACKAGES += \
