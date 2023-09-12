@@ -109,13 +109,43 @@
       "ResetOnInit": true
     },
     {
+      "Name": "GPUSchedPeriod",
+      "Path": "/sys/devices/platform/13000000.mali/js_scheduling_period",
+      "Values": [
+        "100",
+        "75",
+        "50",
+        "0"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
       "Name": "GPUDVFSInterval",
       "Path": "/sys/devices/platform/13000000.mali/dvfs_period",
       "Values": [
-        "0",
-        "50",
-	"75",
-        "100"
+        "100",
+        "75",
+        "50"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
+      "Name": "TASchedtuneBoost",
+      "Path": "/dev/stune/top-app/schedtune.boost",
+      "Values": [
+        "40",
+        "10"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CDSchedtuneBoost",
+      "Path": "/dev/stune/camera-daemon/schedtune.boost",
+      "Values": [
+        "1",
+        "0"
       ],
       "ResetOnInit": true
     },
@@ -127,7 +157,55 @@
         "50",
         "100"
       ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
+      "Name": "TABoostPerf",
+      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_ta_boost",
+      "Values": [
+        "0",
+        "50",
+        "100"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
+      "Name": "BGBoostPerf",
+      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_bg_boost",
+      "Values": [
+        "0",
+        "50",
+        "100"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
+      "Name": "FBTFloorBound",
+      "Path": "/sys/module/fbt_cpu/parameters/floor_bound",
+      "Values": [
+        "20",
+        "10",
+        "5",
+        "1"
+      ],
       "ResetOnInit": true
+    },
+    {
+      "Name": "FBTVariance",
+      "Path": "/sys/module/fbt_cpu/parameters/variance",
+      "Values": [
+        "100",
+        "80",
+        "60",
+        "40",
+        "20",
+        "0"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 3
     },
     {
       "Name": "DRAMOppMin",
@@ -146,8 +224,10 @@
       "Path": "/sys/module/fbt_cpu/parameters/bhr_opp",
       "Values": [
         "1",
-        "5",
-        "10",
+        "3",
+        "6",
+        "9",
+        "12",
         "15"
       ],
       "ResetOnInit": true,
@@ -157,13 +237,31 @@
       "Name": "FBTBHR",
       "Path": "/sys/module/fbt_cpu/parameters/bhr",
       "Values": [
-        "0",
         "5",
         "10",
         "50",
         "100"
       ],
-      "ResetOnInit": true
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
+      "Name": "EASMigrateCost",
+      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/m_sched_migrate_cost_n",
+      "Values": [
+        "0",
+        "100000",
+        "200000",
+        "400000",
+        "800000",
+        "1000000",
+        "2000000",
+        "4000000",
+        "8000000",
+        "10000000"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 3
     },
     {
       "Name": "CCIFreqMode",
@@ -179,15 +277,29 @@
       "Name": "GPUBlockBoost",
       "Path": "/sys/kernel/fpsgo/common/gpu_block_boost",
       "Values": [
-        "0",
+        "101",
         "50",
-        "101"
+        "0",
+        "-1"
       ],
-      "ResetOnInit": true
+      "ResetOnInit": true,
+      "DefaultIndex": 2
     },
     {
       "Name": "UclampMin",
       "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_uclamp_min",
+      "Values": [
+        "100",
+        "75",
+        "50",
+        "25",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "BGUclampMin",
+      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_bg_uclamp_min",
       "Values": [
         "100",
         "75",
@@ -213,6 +325,8 @@
       "Name": "TAUclampMin",
       "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_ta_uclamp_min",
       "Values": [
+        "100",
+        "75",
         "50",
         "25",
         "0"
@@ -286,13 +400,31 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1280000"
+      "Value": "1393000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "1042000"
+      "Value": "1418000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "2000000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "2400000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "TASchedtuneBoost",
+      "Duration": 0,
+      "Value": "40"
     },
     {
       "PowerHint": "INTERACTION",
@@ -352,19 +484,25 @@
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 3000,
-      "Value": "1650000"
+      "Value": "2400000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 3000,
+      "Value": "2000000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 3000,
-      "Value": "1812000"
+      "Value": "2000000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "TAUclampMin",
       "Duration": 3000,
-      "Value": "50"
+      "Value": "100"
     },
     {
       "PowerHint": "LAUNCH",
