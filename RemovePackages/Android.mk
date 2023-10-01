@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := AudioFX Etar ExactCalculator HTMLViewer Jelly MusicFX SpeechServicesByGoogle talkback Velvet PrebuiltExchange3Google AndroidAutoStub Stk
+LOCAL_OVERRIDES_PACKAGES := AudioFX MusicFX PrebuiltDeskClockGoogle SpeechServicesByGoogle talkback Velvet AndroidAutoStub Stk
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
