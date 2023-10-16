@@ -299,11 +299,11 @@ PRODUCT_PACKAGES += \
     meta_init.connectivity.rc \
     init.connectivity.rc \
     multi_init.rc \
-    init.recovery.mt6833.rc \
     init.recovery.hardware.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6833
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6833 \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.mt6833.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6833.rc
 
 # Recovery
 PRODUCT_COPY_FILES += \
