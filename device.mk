@@ -114,9 +114,9 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.composer@2.1-impl.vendor:64 \
-    android.hardware.graphics.composer@2.1.vendor:64 \
-    android.hardware.graphics.composer@2.1-resources.vendor:64 \
+    android.hardware.graphics.composer@2.1-impl.vendor \
+    android.hardware.graphics.composer@2.1.vendor \
+    android.hardware.graphics.composer@2.1-resources.vendor \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
     libdrm.vendor
@@ -146,8 +146,12 @@ PRODUCT_PACKAGES += \
 
 # GNSS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss.measurement_corrections@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.1.vendor
 
 # Health
@@ -180,12 +184,16 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0.vendor:64 \
+    android.hardware.keymaster@4.0.vendor:64 \
     android.hardware.keymaster@4.1.vendor:64 \
     libkeymaster4.vendor:64 \
     libkeymaster41.vendor:64 \
+    libkeymaster4_1support.vendor:64 \
     libkeymaster4support.vendor:64 \
     libkeymaster_messages.vendor:64 \
     libkeymaster_portable.vendor:64 \
+    libpuresoftkeymasterdevice.vendor:64
     libkeystore-engine-wifi-hidl:64 \
     libkeystore-wifi-hidl
 
@@ -256,9 +264,11 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek \
-    android.hardware.power-V1-ndk_platform.vendor:64 \
-    android.hardware.power@1.1.vendor:64
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power@1.3.vendor \
+    android.hardware.power-service-mediatek
 
 # Power configs
 PRODUCT_COPY_FILES += \
