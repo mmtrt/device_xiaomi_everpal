@@ -193,7 +193,7 @@ PRODUCT_PACKAGES += \
     libkeymaster4support.vendor:64 \
     libkeymaster_messages.vendor:64 \
     libkeymaster_portable.vendor:64 \
-    libpuresoftkeymasterdevice.vendor:64
+    libpuresoftkeymasterdevice.vendor:64 \
     libkeystore-engine-wifi-hidl:64 \
     libkeystore-wifi-hidl
 
