@@ -1,0 +1,10 @@
+<!--
+    Input:
+        manifest_nfc.xml
+-->
+<manifest version="4.0" type="device" target-level="5">
+    <hal format="aidl" override="true">
+        <name>android.hardware.nfc</name>
+        <fqname>INfc/default</fqname>
+    </hal>
+</manifest>

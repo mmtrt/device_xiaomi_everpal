@@ -117,8 +117,7 @@ BOARD_USES_METADATA_PARTITION := true
 
 # NFC
 ODM_MANIFEST_SKUS += nfc
-ODM_MANIFEST_NFC_FILES := \
-    hardware/st/nfc/aidl/nfc-service-default.xml
+ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
