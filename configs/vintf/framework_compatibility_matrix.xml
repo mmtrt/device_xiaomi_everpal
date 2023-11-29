@@ -22,6 +22,13 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>android.hardware.drm</name>
+        <interface>
+            <name>IDrmFactory</name>
+            <instance>clearkey</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>android.hardware.gnss</name>
         <interface>
             <name>IGnss</name>
@@ -124,12 +131,10 @@
         <version>1.0-4</version>
         <interface>
             <name>ICryptoFactory</name>
-            <instance>clearkey</instance>
             <instance>widevine</instance>
         </interface>
         <interface>
             <name>IDrmFactory</name>
-            <instance>clearkey</instance>
             <instance>widevine</instance>
         </interface>
     </hal>
