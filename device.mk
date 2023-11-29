@@ -143,7 +143,7 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor \
     libprotobuf-cpp-full-3.9.1-vendorcompat
 
