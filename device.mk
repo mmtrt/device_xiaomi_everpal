@@ -44,7 +44,6 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio.service \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.common-util.vendor \
     android.hardware.audio.common@5.0.vendor \
