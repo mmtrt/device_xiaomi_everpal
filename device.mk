@@ -197,10 +197,6 @@ PRODUCT_PACKAGES += \
     libkeystore-engine-wifi-hidl:64 \
     libkeystore-wifi-hidl
 
-# Light
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.everpal
-
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service
