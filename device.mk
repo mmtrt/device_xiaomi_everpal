@@ -113,6 +113,9 @@ PRODUCT_PACKAGES += \
     libdrm.vendor \
     libvulkan
 
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # DRM
 PRODUCT_PACKAGES += \
     libdrmclearkeyplugin \
