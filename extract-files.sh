@@ -55,9 +55,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-    vendor/lib64/libwifi-hal-mtk.so)
-        "$PATCHELF" --set-soname libwifi-hal-mtk.so "$2"
-        ;;
     vendor/etc/init/init.batterysecret.rc)
 	sed -i 's/seclabel/#seclabel/g' "${2}"
 	    ;;
