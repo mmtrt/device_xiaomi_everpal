@@ -108,9 +108,6 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.composer@2.1-impl.vendor \
-    android.hardware.graphics.composer@2.1.vendor \
-    android.hardware.graphics.composer@2.1-resources.vendor \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
     libdrm.vendor
@@ -192,13 +189,6 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl
 
 # Media
-PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service
-
-PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor \
-    libavservices_minijail_vendor
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -322,10 +312,6 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0.vendor \
-    android.hardware.sensors@2.0.vendor \
-    android.hardware.sensors@2.1.vendor \
-    android.hardware.sensors@2.0-ScopedWakelock.vendor \
     libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
