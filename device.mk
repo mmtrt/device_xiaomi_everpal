@@ -54,6 +54,9 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
